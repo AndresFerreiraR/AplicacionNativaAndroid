@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">Nativa</string>
+    <string name="app_name"> Plataformas moviles</string>
+    <string name="menu_principal">MENU PRINCIPAL</string>
+    <string name="ir">+</string>
+
+    <string name="nombre_umb">Universidad Manuela Beltran</string>
+    <string name="ingenieria_software">Ingenieria De Software</string>
+    <string name="asignatura">Plataformas moviles II</string>
+    <string name="año"> 2020</string>
+    <string name="estudiante"> Andrés Camilo Ferreira Rodriguez</string>
+    <string name="profesor"> Jhon Alixis Mendez Lara</string>
 </resources>

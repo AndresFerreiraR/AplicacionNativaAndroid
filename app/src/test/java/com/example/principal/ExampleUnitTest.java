@@ -1,4 +1,4 @@
-package com.example.nativa;
+package com.example.principal;
 
 import org.junit.Test;
 

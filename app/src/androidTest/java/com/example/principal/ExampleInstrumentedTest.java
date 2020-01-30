@@ -1,4 +1,4 @@
-package com.example.nativa;
+package com.example.principal;
 
 import android.content.Context;
 
