@@ -7,6 +7,7 @@ import android.view.View;
 import android.webkit.WebViewClient;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.example.principal.R;
 import com.example.visalizacionMensajes.VisalizacionMensajesActividad;
@@ -20,6 +21,7 @@ public class MensajeActividad extends AppCompatActivity {
     private String mensaje;
     private EditText etMensaje;
     private Button btnGuardar;
+    private Button btnVerMensajes;
     //endregion
 
     @Override
@@ -28,10 +30,36 @@ public class MensajeActividad extends AppCompatActivity {
         setContentView(R.layout.actividad_mensajes);
 
         etMensaje = findViewById(R.id.ed_mensaje);
-        mensaje = etMensaje.getText().toString();
-
         btnGuardar = findViewById(R.id.guardar);
-        btnGuardar.setOnClickListener(onClickGuardar);
+
+        btnGuardar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                mensaje = etMensaje.getText().toString();
+                if (mensaje.isEmpty()) {
+                    Toast toast2= Toast.makeText(getBaseContext(),"escriba un mensaje",Toast.LENGTH_LONG);
+                    toast2.show();
+                    btnVerMensajes.setVisibility(View.INVISIBLE);
+                    return;
+                }else {
+                    btnVerMensajes.setVisibility(View.VISIBLE);
+                }
+
+                Toast toast= Toast.makeText(getBaseContext(),"guardado",Toast.LENGTH_LONG);
+                toast.show();
+
+                limpiarControl(etMensaje);
+            }
+        });
+
+
+        btnVerMensajes= findViewById(R.id.mostrar);
+        btnVerMensajes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                lanzarIntencion(mensaje);
+            }
+        });
 
     }
 
@@ -41,10 +69,8 @@ public class MensajeActividad extends AppCompatActivity {
         startActivity(intent);
     }
 
-    private View.OnClickListener onClickGuardar = new View.OnClickListener() {
-        @Override
-        public void onClick(View view) {
-            lanzarIntencion(mensaje);
-        }
-    };
+    private void limpiarControl(EditText editText) {
+        editText.setText("");
+    }
+
 }

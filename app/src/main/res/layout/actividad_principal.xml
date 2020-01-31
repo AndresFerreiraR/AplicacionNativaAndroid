@@ -80,6 +80,27 @@
                         app:layout_alignSelf="center"
                         android:padding="5dp"/>
                 </com.google.android.flexbox.FlexboxLayout>
+
+                <com.google.android.flexbox.FlexboxLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorBlanco"
+                    android:padding="12dp"
+                    app:flexDirection="row">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_chat_black_24dp"
+                        android:padding="5dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="mensajes"
+                        android:gravity="center"
+                        app:layout_alignSelf="center" />
+                </com.google.android.flexbox.FlexboxLayout>
             </com.google.android.flexbox.FlexboxLayout>
 
             <com.google.android.flexbox.FlexboxLayout
@@ -112,81 +133,6 @@
                         android:layout_margin="8dp"
                         android:text="@string/ir"
                         app:layout_flexBasisPercent="55%" />
-                </com.google.android.flexbox.FlexboxLayout>
-
-            </com.google.android.flexbox.FlexboxLayout>
-
-        </com.google.android.flexbox.FlexboxLayout>
-
-        <com.google.android.flexbox.FlexboxLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@color/colorBlanco"
-            android:padding="8dp"
-            app:flexDirection="row">
-
-            <com.google.android.flexbox.FlexboxLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/colorBlanco"
-                android:padding="12dp"
-                app:flexDirection="column">
-
-                <com.google.android.flexbox.FlexboxLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@color/colorBlanco"
-                    android:padding="12dp"
-                    app:flexDirection="row">
-
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/ic_chat_black_24dp"
-                        android:padding="5dp"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="mensajes"
-                        android:gravity="center"
-                        app:layout_alignSelf="center" />
-                </com.google.android.flexbox.FlexboxLayout>
-
-                <com.google.android.flexbox.FlexboxLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@color/colorBlanco"
-                    android:padding="18dp"
-                    app:flexDirection="row">
-
-                    <ImageView
-                        android:layout_width="30dp"
-                        android:layout_height="30dp"
-                        android:src="@drawable/ic_remove_red_eye_black_24dp" />
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="ver mensajes"
-                        app:layout_alignSelf="center"
-                        android:padding="5dp"/>
-                </com.google.android.flexbox.FlexboxLayout>
-            </com.google.android.flexbox.FlexboxLayout>
-
-            <com.google.android.flexbox.FlexboxLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/colorBlanco"
-                android:padding="12dp"
-                app:flexDirection="column"
-                app:layout_flexBasisPercent="50%">
-
-                <com.google.android.flexbox.FlexboxLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="@color/colorBlanco"
-                    app:flexDirection="column">
 
                     <Button
                         android:id="@+id/btn_msj"
@@ -196,13 +142,6 @@
                         android:text="@string/ir"
                         app:layout_flexBasisPercent="55%" />
 
-                    <Button
-                        android:id="@+id/btn_ver"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_margin="8dp"
-                        android:text="@string/ir"
-                        app:layout_flexBasisPercent="55%" />
                 </com.google.android.flexbox.FlexboxLayout>
 
             </com.google.android.flexbox.FlexboxLayout>

@@ -19,8 +19,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.example.WebView.WVActividad" >
-        </activity>
+        <activity android:name="com.example.WebView.WVActividad" />
         <activity android:name="com.example.visalizacionMensajes.VisalizacionMensajesActividad" />
         <activity android:name="com.example.WebView.WVUmbActividad" />
         <activity android:name="com.example.mensajes.MensajeActividad" />

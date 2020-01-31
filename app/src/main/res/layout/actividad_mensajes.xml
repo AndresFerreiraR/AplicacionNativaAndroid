@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -7,7 +8,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/enviar_mensaje"
-        android:layout_margin="50dp"
+        android:layout_margin="30dp"
         android:gravity="center"
         android:textColor="@color/colorPrimary"/>
 
@@ -21,7 +22,7 @@
         android:id="@+id/ed_mensaje"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="15dp"
+        android:layout_margin="10dp"
         android:hint="Escriba un mensaje..."/>
 
     <Button
@@ -31,4 +32,32 @@
         android:layout_marginTop="20dp"
         android:layout_marginLeft="110dp"
         android:text="GUARDAR"/>
+
+    <com.google.android.flexbox.FlexboxLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBlanco"
+        android:layout_margin="20dp"
+        app:flexDirection="row">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="30dp"
+            android:src="@drawable/ic_remove_red_eye_black_24dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ver mensajes"
+            app:layout_alignSelf="center" />
+        <Button
+            android:id="@+id/mostrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:text="+"/>
+    </com.google.android.flexbox.FlexboxLayout>
+
 </LinearLayout>
