@@ -5,7 +5,7 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 
-import com.example.principal.MainActivity;
+import com.example.principal.principalActividad;
 import com.example.principal.R;
 
 import androidx.annotation.Nullable;
@@ -29,7 +29,7 @@ public class launchActividad extends Activity {
         new Handler().postDelayed(new Runnable() {
             @Override
             public void run() {
-                startActivity(new Intent(new Intent(getBaseContext(), MainActivity.class)));
+                startActivity(new Intent(new Intent(getBaseContext(), principalActividad.class)));
                 finish();
             }
         }, tiempo * 1000);

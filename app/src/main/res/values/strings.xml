@@ -9,4 +9,7 @@
     <string name="año"> 2020</string>
     <string name="estudiante"> Andrés Camilo Ferreira Rodriguez</string>
     <string name="profesor"> Jhon Alixis Mendez Lara</string>
+    <string name="enviar_mensaje">ENVIAR MENSAJE</string>
+    <string name="sus_mensajes"> MENSAJES</string>
+    <string name="mensajes">mensajes:</string>
 </resources>

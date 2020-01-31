@@ -10,7 +10,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.example.principal.MainActivity">
+        <activity android:name="com.example.principal.principalActividad">
         </activity>
         <activity android:name="com.example.launch.launchActividad" >
             <intent-filter>
@@ -20,8 +20,10 @@
             </intent-filter>
         </activity>
         <activity android:name="com.example.WebView.WVActividad" >
-
         </activity>
+        <activity android:name="com.example.visalizacionMensajes.VisalizacionMensajesActividad" />
+        <activity android:name="com.example.WebView.WVUmbActividad" />
+        <activity android:name="com.example.mensajes.MensajeActividad" />
     </application>
 
 </manifest>
