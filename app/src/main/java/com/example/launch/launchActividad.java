@@ -14,7 +14,7 @@ import androidx.annotation.Nullable;
 public class launchActividad extends Activity {
 
     //region Atributos
-    int tiempo = 1;
+    int tiempo = 3;
     //endregion
 
 
